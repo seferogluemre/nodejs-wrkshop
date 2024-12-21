@@ -13,7 +13,16 @@
 
 const fs = require('fs');
 
-const files = fs.readdir('.../', function (error, data) {
-    console.log(error ? error : data)
-})
+// const files = fs.readdir('.../', function (error, data) {
+//     console.log(error ? error : data)
+// })
 
+// Örnek 2------
+
+// const data = fs.readFile('index.html', "utf-8", function (error, data) {
+//     console.log(error ? error : data);
+// })
+
+fs.writeFile('deneme.txt', 'Dosyanız oluşturuldu Emre SEFEROĞLU', function (error) {
+    console.log(error ? error : "Dosyanız oluşturuldu");
+})
